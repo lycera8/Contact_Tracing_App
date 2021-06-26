@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ContactTracingApp
 {
-    public partial class Form1 : Form
+    public partial class submitBtn : Form
     {
-        public Form1()
+        public submitBtn()
         {
             InitializeComponent();
         }
@@ -38,6 +38,11 @@ namespace ContactTracingApp
         }
 
         private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
         {
 
         }
