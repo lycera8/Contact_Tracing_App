@@ -51,12 +51,12 @@ namespace ContactTracingApp
             this.DateLb = new System.Windows.Forms.Label();
             this.timeLB = new System.Windows.Forms.Label();
             this.privacyCB = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.sympBox1 = new System.Windows.Forms.CheckBox();
+            this.sympBox3 = new System.Windows.Forms.CheckBox();
+            this.sympBox2 = new System.Windows.Forms.CheckBox();
+            this.sympBox5 = new System.Windows.Forms.CheckBox();
+            this.sympBox4 = new System.Windows.Forms.CheckBox();
+            this.sympBox6 = new System.Windows.Forms.CheckBox();
             this.note2 = new System.Windows.Forms.Label();
             this.note3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -64,8 +64,10 @@ namespace ContactTracingApp
             this.label7 = new System.Windows.Forms.Label();
             this.insLB = new System.Windows.Forms.Label();
             this.numBx = new System.Windows.Forms.TextBox();
-            this.nameLB1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.signLB = new System.Windows.Forms.Label();
+            this.sbmtBtn = new System.Windows.Forms.Button();
+            this.date = new System.Windows.Forms.DateTimePicker();
+            this.time = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // Title
@@ -267,7 +269,7 @@ namespace ContactTracingApp
             this.DateLb.AutoSize = true;
             this.DateLb.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.DateLb.ForeColor = System.Drawing.Color.White;
-            this.DateLb.Location = new System.Drawing.Point(291, 138);
+            this.DateLb.Location = new System.Drawing.Point(291, 128);
             this.DateLb.Name = "DateLb";
             this.DateLb.Size = new System.Drawing.Size(110, 19);
             this.DateLb.TabIndex = 19;
@@ -278,7 +280,7 @@ namespace ContactTracingApp
             this.timeLB.AutoSize = true;
             this.timeLB.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.timeLB.ForeColor = System.Drawing.Color.White;
-            this.timeLB.Location = new System.Drawing.Point(501, 138);
+            this.timeLB.Location = new System.Drawing.Point(501, 128);
             this.timeLB.Name = "timeLB";
             this.timeLB.Size = new System.Drawing.Size(110, 19);
             this.timeLB.TabIndex = 20;
@@ -297,77 +299,77 @@ namespace ContactTracingApp
             this.privacyCB.Text = resources.GetString("privacyCB.Text");
             this.privacyCB.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // sympBox1
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.checkBox1.ForeColor = System.Drawing.Color.White;
-            this.checkBox1.Location = new System.Drawing.Point(12, 350);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(108, 24);
-            this.checkBox1.TabIndex = 22;
-            this.checkBox1.Text = "Sore Throat";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.sympBox1.AutoSize = true;
+            this.sympBox1.CheckAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.sympBox1.ForeColor = System.Drawing.Color.White;
+            this.sympBox1.Location = new System.Drawing.Point(12, 350);
+            this.sympBox1.Name = "sympBox1";
+            this.sympBox1.Size = new System.Drawing.Size(108, 24);
+            this.sympBox1.TabIndex = 22;
+            this.sympBox1.Text = "Sore Throat";
+            this.sympBox1.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // sympBox3
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.checkBox2.ForeColor = System.Drawing.Color.White;
-            this.checkBox2.Location = new System.Drawing.Point(126, 350);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(98, 24);
-            this.checkBox2.TabIndex = 23;
-            this.checkBox2.Text = "Headache";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.sympBox3.AutoSize = true;
+            this.sympBox3.CheckAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.sympBox3.ForeColor = System.Drawing.Color.White;
+            this.sympBox3.Location = new System.Drawing.Point(126, 350);
+            this.sympBox3.Name = "sympBox3";
+            this.sympBox3.Size = new System.Drawing.Size(98, 24);
+            this.sympBox3.TabIndex = 23;
+            this.sympBox3.Text = "Headache";
+            this.sympBox3.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // sympBox2
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.checkBox3.ForeColor = System.Drawing.Color.White;
-            this.checkBox3.Location = new System.Drawing.Point(12, 380);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(96, 24);
-            this.checkBox3.TabIndex = 24;
-            this.checkBox3.Text = "Body Pain";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.sympBox2.AutoSize = true;
+            this.sympBox2.CheckAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.sympBox2.ForeColor = System.Drawing.Color.White;
+            this.sympBox2.Location = new System.Drawing.Point(12, 380);
+            this.sympBox2.Name = "sympBox2";
+            this.sympBox2.Size = new System.Drawing.Size(96, 24);
+            this.sympBox2.TabIndex = 24;
+            this.sympBox2.Text = "Body Pain";
+            this.sympBox2.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // sympBox5
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.CheckAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.checkBox4.ForeColor = System.Drawing.Color.White;
-            this.checkBox4.Location = new System.Drawing.Point(240, 350);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(114, 24);
-            this.checkBox4.TabIndex = 25;
-            this.checkBox4.Text = "Loss of Taste";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.sympBox5.AutoSize = true;
+            this.sympBox5.CheckAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.sympBox5.ForeColor = System.Drawing.Color.White;
+            this.sympBox5.Location = new System.Drawing.Point(240, 350);
+            this.sympBox5.Name = "sympBox5";
+            this.sympBox5.Size = new System.Drawing.Size(114, 24);
+            this.sympBox5.TabIndex = 25;
+            this.sympBox5.Text = "Loss of Taste";
+            this.sympBox5.UseVisualStyleBackColor = true;
             // 
-            // checkBox5
+            // sympBox4
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.CheckAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.checkBox5.ForeColor = System.Drawing.Color.White;
-            this.checkBox5.Location = new System.Drawing.Point(126, 380);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(66, 24);
-            this.checkBox5.TabIndex = 26;
-            this.checkBox5.Text = "Fever";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.sympBox4.AutoSize = true;
+            this.sympBox4.CheckAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.sympBox4.ForeColor = System.Drawing.Color.White;
+            this.sympBox4.Location = new System.Drawing.Point(126, 380);
+            this.sympBox4.Name = "sympBox4";
+            this.sympBox4.Size = new System.Drawing.Size(66, 24);
+            this.sympBox4.TabIndex = 26;
+            this.sympBox4.Text = "Fever";
+            this.sympBox4.UseVisualStyleBackColor = true;
             // 
-            // checkBox6
+            // sympBox6
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.CheckAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.checkBox6.ForeColor = System.Drawing.Color.White;
-            this.checkBox6.Location = new System.Drawing.Point(240, 380);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(117, 24);
-            this.checkBox6.TabIndex = 27;
-            this.checkBox6.Text = "Lost of Smell";
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.sympBox6.AutoSize = true;
+            this.sympBox6.CheckAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.sympBox6.ForeColor = System.Drawing.Color.White;
+            this.sympBox6.Location = new System.Drawing.Point(240, 380);
+            this.sympBox6.Name = "sympBox6";
+            this.sympBox6.Size = new System.Drawing.Size(117, 24);
+            this.sympBox6.TabIndex = 27;
+            this.sympBox6.Text = "Lost of Smell";
+            this.sympBox6.UseVisualStyleBackColor = true;
             // 
             // note2
             // 
@@ -450,28 +452,45 @@ namespace ContactTracingApp
             this.numBx.Size = new System.Drawing.Size(150, 27);
             this.numBx.TabIndex = 34;
             // 
-            // nameLB1
+            // signLB
             // 
-            this.nameLB1.AutoSize = true;
-            this.nameLB1.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.nameLB1.ForeColor = System.Drawing.Color.White;
-            this.nameLB1.Location = new System.Drawing.Point(12, 560);
-            this.nameLB1.Name = "nameLB1";
-            this.nameLB1.Size = new System.Drawing.Size(67, 21);
-            this.nameLB1.TabIndex = 35;
-            this.nameLB1.Text = "Full name";
-            this.nameLB1.UseCompatibleTextRendering = true;
+            this.signLB.AutoSize = true;
+            this.signLB.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.signLB.ForeColor = System.Drawing.Color.White;
+            this.signLB.Location = new System.Drawing.Point(12, 560);
+            this.signLB.Name = "signLB";
+            this.signLB.Size = new System.Drawing.Size(67, 21);
+            this.signLB.TabIndex = 35;
+            this.signLB.Text = "Full name";
+            this.signLB.UseCompatibleTextRendering = true;
             // 
-            // button1
+            // sbmtBtn
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(594, 530);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(109, 27);
-            this.button1.TabIndex = 36;
-            this.button1.Text = "Submit";
-            this.button1.UseVisualStyleBackColor = false;
+            this.sbmtBtn.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.sbmtBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.sbmtBtn.Location = new System.Drawing.Point(594, 530);
+            this.sbmtBtn.Name = "sbmtBtn";
+            this.sbmtBtn.Size = new System.Drawing.Size(109, 27);
+            this.sbmtBtn.TabIndex = 36;
+            this.sbmtBtn.Text = "Submit";
+            this.sbmtBtn.UseVisualStyleBackColor = false;
+            // 
+            // date
+            // 
+            this.date.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.date.Location = new System.Drawing.Point(291, 150);
+            this.date.Name = "date";
+            this.date.Size = new System.Drawing.Size(116, 27);
+            this.date.TabIndex = 38;
+            // 
+            // time
+            // 
+            this.time.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.time.Location = new System.Drawing.Point(495, 150);
+            this.time.Name = "time";
+            this.time.Size = new System.Drawing.Size(116, 27);
+            this.time.TabIndex = 39;
+            this.time.Value = new System.DateTime(2021, 7, 6, 14, 32, 0, 0);
             // 
             // submitBtn
             // 
@@ -479,8 +498,10 @@ namespace ContactTracingApp
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(748, 583);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.nameLB1);
+            this.Controls.Add(this.time);
+            this.Controls.Add(this.date);
+            this.Controls.Add(this.sbmtBtn);
+            this.Controls.Add(this.signLB);
             this.Controls.Add(this.numBx);
             this.Controls.Add(this.insLB);
             this.Controls.Add(this.label7);
@@ -488,12 +509,12 @@ namespace ContactTracingApp
             this.Controls.Add(this.label5);
             this.Controls.Add(this.note3);
             this.Controls.Add(this.note2);
-            this.Controls.Add(this.checkBox6);
-            this.Controls.Add(this.checkBox5);
-            this.Controls.Add(this.checkBox4);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.sympBox6);
+            this.Controls.Add(this.sympBox4);
+            this.Controls.Add(this.sympBox5);
+            this.Controls.Add(this.sympBox2);
+            this.Controls.Add(this.sympBox3);
+            this.Controls.Add(this.sympBox1);
             this.Controls.Add(this.privacyCB);
             this.Controls.Add(this.timeLB);
             this.Controls.Add(this.DateLb);
@@ -547,12 +568,12 @@ namespace ContactTracingApp
         private System.Windows.Forms.Label DateLb;
         private System.Windows.Forms.Label timeLB;
         private System.Windows.Forms.CheckBox privacyCB;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox6;
+        private System.Windows.Forms.CheckBox sympBox1;
+        private System.Windows.Forms.CheckBox sympBox3;
+        private System.Windows.Forms.CheckBox sympBox2;
+        private System.Windows.Forms.CheckBox sympBox5;
+        private System.Windows.Forms.CheckBox sympBox4;
+        private System.Windows.Forms.CheckBox sympBox6;
         private System.Windows.Forms.Label note2;
         private System.Windows.Forms.Label note3;
         private System.Windows.Forms.Label label5;
@@ -560,8 +581,10 @@ namespace ContactTracingApp
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label insLB;
         private System.Windows.Forms.TextBox numBx;
-        private System.Windows.Forms.Label nameLB1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label signLB;
+        private System.Windows.Forms.Button sbmtBtn;
+        private System.Windows.Forms.DateTimePicker date;
+        private System.Windows.Forms.DateTimePicker time;
     }
 }
 
