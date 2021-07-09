@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,45 +12,52 @@ using System.Windows.Forms;
 namespace ContactTracingApp
 {
     public partial class submitBtn : Form
-    {
+    { 
+
+
         public submitBtn()
         {
             InitializeComponent();
         }
-
-        private void label1_Click(object sender, EventArgs e)
+        private void sbmtBtn_Click(object sender, EventArgs e)
         {
+
+            SubInfo(nmBx.Text, timeBx.Text, addressBx.Text, emailBx.Text, long.Parse(numBx.Text), float.Parse(tempBx.Text),
+                        sympBx.Text);
+
+            
+
+            if (privacyCB.Checked)
+            {
+                MessageBox.Show("Thank you for answering! Have a good day!");
+                Application.Exit();
+            }
+            else
+            {
+                MessageBox.Show("Please go back and check the box. Have a good day!");
+                
+            }
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void SubInfo(string nmBx, string timeBx, string addressBx, string emailBx, long numBx, float tempBx,
+                                string sympBx)
         {
+            StreamWriter contactList;
 
-        }
+            String dateCrtd = DateTime.Now.ToLongDateString();
 
-        private void nameBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-
+            contactList = File.AppendText(dateCrtd);
+            contactList.WriteLine(nmBx);
+            contactList.WriteLine(timeBx);
+            contactList.WriteLine(addressBx);
+            contactList.WriteLine(emailBx);
+            contactList.WriteLine(numBx.ToString());
+            contactList.WriteLine(tempBx.ToString());
+            contactList.WriteLine(sympBx);
+            contactList.WriteLine("");
+            contactList.Close();
+        
         }
     }
 }
